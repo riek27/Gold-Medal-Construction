@@ -462,3 +462,117 @@ function initProjectModal() {
 if (window.location.pathname.includes('projects.html')) {
     document.addEventListener('DOMContentLoaded', initProjectModal);
 }
+
+// Add this to your existing script.js file
+
+// FAQ Functionality
+function initFAQ() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    if (faqItems.length === 0) return;
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        const toggle = item.querySelector('.faq-toggle');
+        
+        question.addEventListener('click', () => {
+            // Close all other FAQ items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                    otherItem.querySelector('.faq-toggle').textContent = '+';
+                }
+            });
+            
+            // Toggle current item
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+                toggle.textContent = '+';
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                toggle.textContent = '−';
+            }
+        });
+    });
+    
+    // Initialize FAQ answers to be closed
+    document.querySelectorAll('.faq-answer').forEach(answer => {
+        answer.style.maxHeight = null;
+    });
+}
+
+// Project Filtering
+function initProjectFilter() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    if (filterButtons.length === 0) return;
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            const filterValue = this.getAttribute('data-filter');
+            
+            // Filter projects
+            projectCards.forEach(card => {
+                if (filterValue === 'all') {
+                    card.style.display = 'block';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 100);
+                } else {
+                    const categories = card.getAttribute('data-category');
+                    if (categories.includes(filterValue)) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                }
+            });
+        });
+    });
+}
+
+// Update the initialization function
+document.addEventListener('DOMContentLoaded', () => {
+    initTypewriter();
+    initMobileMenu();
+    initScrollTop();
+    initContactForm();
+    initFAQ();
+    initProjectFilter();
+    
+    // Set current year in footer
+    const currentYear = document.getElementById('currentYear');
+    if (currentYear) {
+        currentYear.textContent = new Date().getFullYear();
+    }
+    
+    // Initialize scroll reveal
+    window.dispatchEvent(new Event('scroll'));
+    
+    // Add active class to current page link
+    const currentPage = window.location.pathname.split('/').pop();
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        const linkPage = link.getAttribute('href');
+        if (linkPage === currentPage || (currentPage === '' && linkPage === 'index.html')) {
+            link.classList.add('active');
+        }
+    });
+});
