@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | Point Investment Company Limited</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/engineering.png">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Point<span>Investment</span></a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+             alt="Projects Background" class="page-header-bg">
+        <div class="page-header-content">
+            <h1>Our Projects</h1>
+            <p>Showcasing our expertise and successful projects across South Sudan</p>
+        </div>
+    </section>
+
+    <!-- Projects Content -->
+    <section class="page-content">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Project Portfolio</h2>
+                <p class="section-subtitle">A showcase of our completed and ongoing projects demonstrating our commitment to excellence</p>
+            </div>
+            
+            <!-- Project Filters -->
+            <div class="project-filters reveal">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="engineering">Engineering</button>
+                    <button class="filter-btn" data-filter="construction">Construction</button>
+                    <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+                    <button class="filter-btn" data-filter="commercial">Commercial</button>
+                    <button class="filter-btn" data-filter="residential">Residential</button>
+                </div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal" data-category="engineering commercial">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Juba Commercial Complex">
+                        <div class="project-overlay">
+                            <button class="project-view-btn" data-project="1">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Juba Commercial Complex</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i> Juba, South Sudan
+                        </div>
+                        <p>A modern commercial complex with retail spaces, offices, and conference facilities in the heart of Juba.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Commercial</span>
+                            <span class="project-tag">Engineering</span>
+                            <span class="project-tag">Completed 2023</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card reveal" data-category="construction residential">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" 
+                             alt="Residential Development Project">
+                        <div class="project-overlay">
+                            <button class="project-view-btn" data-project="2">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Residential Development Project</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i> Juba, South Sudan
+                        </div>
+                        <p>A housing development project providing modern residential units with complete infrastructure and utilities.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Residential</span>
+                            <span class="project-tag">Construction</span>
+                            <span class="project-tag">Ongoing</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card reveal" data-category="engineering infrastructure">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Regional Road Infrastructure">
+                        <div class="project-overlay">
+                            <button class="project-view-btn" data-project="3">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Regional Road Infrastructure</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i> Central Equatoria, South Sudan
+                        </div>
+                        <p>Construction and rehabilitation of regional road networks to improve transportation and connectivity.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Infrastructure</span>
+                            <span class="project-tag">Engineering</span>
+                            <span class="project-tag">Completed 2022</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card reveal" data-category="construction commercial">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1504309092620-4d0ec726efa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Government Administration Building">
+                        <div class="project-overlay">
+                            <button class="project-view-btn" data-project="4">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Government Administration Building</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i> Juba, South Sudan
+                        </div>
+                        <p>Design and construction of a modern administration building for government operations and services.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Commercial</span>
+                            <span class="project-tag">Construction</span>
+                            <span class="project-tag">Completed 2023</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card reveal" data-category="construction commercial">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Warehouse and Storage Facility">
+                        <div class="project-overlay">
+                            <button class="project-view-btn" data-project="5">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Warehouse and Storage Facility</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i> Juba, South Sudan
+                        </div>
+                        <p>A modern warehouse facility with climate-controlled storage areas and efficient logistics infrastructure.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Commercial</span>
+                            <span class="project-tag">Construction</span>
+                            <span class="project-tag">Completed 2022</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card reveal" data-category="construction commercial">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Corporate Office Complex">
+                        <div class="project-overlay">
+                            <button class="project-view-btn" data-project="6">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Corporate Office Complex</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i> Juba, South Sudan
+                        </div>
+                        <p>A contemporary office complex designed to accommodate multiple businesses with modern amenities.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Commercial</span>
+                            <span class="project-tag">Construction</span>
+                            <span class="project-tag">Completed 2023</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 7 -->
+                <div class="project-card reveal" data-category="engineering infrastructure">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Bridge Construction Project">
+                        <div class="project-overlay">
+                            <button class="project-view-btn" data-project="7">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Bridge Construction Project</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i> Upper Nile, South Sudan
+                        </div>
+                        <p>Design and construction of a major bridge to improve connectivity across the region.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Infrastructure</span>
+                            <span class="project-tag">Engineering</span>
+                            <span class="project-tag">Ongoing</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 8 -->
+                <div class="project-card reveal" data-category="construction residential">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80" 
+                             alt="Apartment Complex Development">
+                        <div class="project-overlay">
+                            <button class="project-view-btn" data-project="8">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Apartment Complex Development</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i> Juba, South Sudan
+                        </div>
+                        <p>A modern apartment complex with 50 units, recreational facilities, and green spaces.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Residential</span>
+                            <span class="project-tag">Construction</span>
+                            <span class="project-tag">Completed 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project Statistics -->
+            <div class="section-title reveal" style="margin-top: 5rem;">
+                <h2>Project Statistics</h2>
+                <p class="section-subtitle">Our track record of successful project delivery</p>
+            </div>
+            
+            <div class="stats-grid reveal">
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Ongoing Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">On-Time Delivery</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="section-title reveal" style="margin-top: 5rem;">
+                <h2>Start Your Project With Us</h2>
+                <p class="section-subtitle">Contact us to discuss how we can bring your construction or engineering project to life</p>
+                <a href="contact.html" class="btn btn-large" style="margin-top: 1.5rem;">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Project Modal -->
+    <div class="project-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-image"></div>
+            <div class="modal-info">
+                <h3 class="modal-title"></h3>
+                <div class="modal-location"></div>
+                <div class="modal-description"></div>
+                <div class="modal-details"></div>
+                <a href="contact.html" class="btn" style="margin-top: 2rem;">Start a Similar Project</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <a href="index.html" class="footer-logo">Point<span>Investment</span></a>
+                    <p>Point Investment Company Limited is a premier provider of engineering, construction support, and supply services in Juba, South Sudan.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Juba, South Sudan</p>
+                    <p><i class="fas fa-phone-alt"></i> +211 922 059 055</p>
+                    <p><i class="fas fa-envelope"></i> info@pointinvestment.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Point Investment Company Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // Project Filtering Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filter projects
+                    projectCards.forEach(card => {
+                        if (filterValue === 'all') {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            const categories = card.getAttribute('data-category');
+                            if (categories.includes(filterValue)) {
+                                card.style.display = 'block';
+                                setTimeout(() => {
+                                    card.style.opacity = '1';
+                                    card.style.transform = 'translateY(0)';
+                                }, 100);
+                            } else {
+                                card.style.opacity = '0';
+                                card.style.transform = 'translateY(20px)';
+                                setTimeout(() => {
+                                    card.style.display = 'none';
+                                }, 300);
+                            }
+                        }
+                    });
+                });
+            });
+            
+            // Project Modal Functionality
+            const modal = document.querySelector('.project-modal');
+            const modalClose = document.querySelector('.modal-close');
+            const modalOverlay = document.querySelector('.modal-overlay');
+            const viewButtons = document.querySelectorAll('.project-view-btn');
+            
+            // Project data
+            const projects = {
+                1: {
+                    title: "Juba Commercial Complex",
+                    location: "Juba, South Sudan",
+                    description: "A state-of-the-art commercial complex spanning 15,000 square meters in the heart of Juba. The project includes retail spaces, modern offices, conference facilities, and underground parking. Our team managed the complete engineering design, construction, and project management.",
+                    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                    details: [
+                        { label: "Project Type", value: "Commercial Construction" },
+                        { label: "Project Size", value: "15,000 sqm" },
+                        { label: "Completion Date", value: "June 2023" },
+                        { label: "Duration", value: "18 months" },
+                        { label: "Services Provided", value: "Engineering, Construction, Project Management" },
+                        { label: "Client", value: "Private Development Group" }
+                    ]
+                },
+                2: {
+                    title: "Residential Development Project",
+                    location: "Juba, South Sudan",
+                    description: "A comprehensive residential development featuring 120 modern housing units with complete infrastructure including roads, water supply, electricity, and sewage systems. The project focuses on sustainable design and community development.",
+                    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80",
+                    details: [
+                        { label: "Project Type", value: "Residential Development" },
+                        { label: "Units", value: "120 housing units" },
+                        { label: "Status", value: "Ongoing" },
+                        { label: "Start Date", value: "January 2023" },
+                        { label: "Expected Completion", value: "December 2024" },
+                        { label: "Services Provided", value: "Construction, Engineering, Supply" }
+                    ]
+                },
+                3: {
+                    title: "Regional Road Infrastructure",
+                    location: "Central Equatoria, South Sudan",
+                    description: "A major infrastructure project involving the construction and rehabilitation of 85 kilometers of regional roads. The project includes drainage systems, bridges, and road safety features to improve transportation and connectivity in the region.",
+                    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                    details: [
+                        { label: "Project Type", value: "Infrastructure Development" },
+                        { label: "Road Length", value: "85 kilometers" },
+                        { label: "Completion Date", value: "November 2022" },
+                        { label: "Duration", value: "24 months" },
+                        { label: "Services Provided", value: "Engineering, Construction, Project Management" },
+                        { label: "Client", value: "Government of South Sudan" }
+                    ]
+                }
+            };
+            
+            viewButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const projectId = this.getAttribute('data-project');
+                    const project = projects[projectId];
+                    
+                    if (project) {
+                        // Update modal content
+                        document.querySelector('.modal-image').style.backgroundImage = `url(${project.image})`;
+                        document.querySelector('.modal-title').textContent = project.title;
+                        document.querySelector('.modal-location').innerHTML = `<i class="fas fa-map-marker-alt"></i> ${project.location}`;
+                        document.querySelector('.modal-description').textContent = project.description;
+                        
+                        // Clear and add details
+                        const detailsContainer = document.querySelector('.modal-details');
+                        detailsContainer.innerHTML = '';
+                        
+                        project.details.forEach(detail => {
+                            const detailItem = document.createElement('div');
+                            detailItem.className = 'detail-item';
+                            detailItem.innerHTML = `
+                                <h4>${detail.label}</h4>
+                                <p>${detail.value}</p>
+                            `;
+                            detailsContainer.appendChild(detailItem);
+                        });
+                        
+                        // Show modal
+                        modal.classList.add('active');
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            });
+            
+            // Close modal
+            modalClose.addEventListener('click', () => {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+            
+            modalOverlay.addEventListener('click', () => {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+            
+            // Close modal with Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
