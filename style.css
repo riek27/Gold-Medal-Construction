@@ -1144,3 +1144,26 @@ footer::before {
     opacity: 1;
     transform: translateY(0);
 }
+
+nav ul {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.faq-answer {
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+.notification {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: 0.3s ease;
+}
+.notification.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
