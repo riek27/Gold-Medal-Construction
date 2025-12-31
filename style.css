@@ -756,33 +756,6 @@ section {
     }
 }
 
-/* Dark Mode Support (Optional) */
-@media (prefers-color-scheme: dark) {
-    .about-section {
-        background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
-    }
-    
-    .about-text h2 {
-        color: #e2e8f0;
-    }
-    
-    .about-text p {
-        color: #cbd5e0;
-    }
-    
-    .about-text strong {
-        color: #e2e8f0;
-    }
-    
-    .about-stats {
-        background: #2d3748;
-        border-color: rgba(212, 175, 55, 0.2);
-    }
-    
-    .stat-label {
-        color: #a0aec0;
-    }
-}
 
 /* Print Styles */
 @media print {
